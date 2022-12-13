@@ -15,6 +15,8 @@ class RoleSeeder extends Seeder
     public function run()
     {
         $role1=Role::create(['name'=>'admin']);
+        $role2=Role::create(['name'=>'usuario']);
+        $role3=Role::create(['name'=>'pagado']);
         
 
         Permission::create(['name'=>'PayBillsIndex']);
@@ -34,6 +36,8 @@ class RoleSeeder extends Seeder
 
 
         $role1->permissions()->attach([1,2,3,4,5,6,7,8,9,10,11]);
+        $role2->permissions()->attach([10,11]);
+        $role3->permissions()->attach([11]);
 
         
 

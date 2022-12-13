@@ -89,17 +89,13 @@
                 </div>
 
                 <div class="links">
-                    @can('Iniciar')
                     <a href="/contribuyentes/create" class="btn btn-primary">Pagar Predial</a>
                     <a href="/paybills/create" class="btn btn-primary">Subir Comprobante</a>
                     <a href="/discounts/create" class="btn btn-primary">Solicitar Descuento</a>
                     <a href="/indexdescarga" class="btn btn-primary">Descargar Comprobante Digital</a>
                     <a href="https://forms.gle/Am3wENareG3K26jv9" class="btn btn-primary">Encuesta</a>
-                    @endcan
                     
-                   @can('UserIndex')
                      <a href="/user" class="btn btn-primary">Lista de usuarios</a>
-                   @endcan
     
                    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(295550)</script>
 
